@@ -1,7 +1,7 @@
 // Produzindo uma calculadora avançada :
 // histórico salvo na conversa chatGPT ProjetoCalculadoraJS_Docker
 
-function voltarInicio(delay = 3000) {           // com o auxílio do chatGPT, em estudos, ele me sugeriu criar uma função que retornava ao início da página html, sendo que também pode ser usada pra levar pra algum trecho
+function voltarInicio(delay = 5000) {           // com o auxílio do chatGPT, em estudos, ele me sugeriu criar uma função que retornava ao início da página html, sendo que também pode ser usada pra levar pra algum trecho
     setTimeout(() => {                          // da sua página html ex : main, footer, etc .. se houverem outras páginas no seu site você pode escolher para onde retornar. 
         window.location.href = "index.html";    // Após criar a função, utilizei nas partes inerentes do código para chama-la.
     }, delay);
@@ -423,3 +423,90 @@ function mediaAritmetica() {
 
     voltarInicio();
 }
+
+function contadorRegressivo() {
+
+    let entrada1 = prompt("Digite um número para iniciar contagem regressiva : ");
+    if (entrada1 === null) {
+        document.writeln("Operação cancelada.");
+        voltarInicio();
+        return;
+    }
+    let num1 = Number(entrada1);
+    while (isNaN(num1) || (num1 === 0)) {
+        entrada1 = prompt("Digite um número válido maior que zero: ");
+        if (entrada1 === null) {
+            document.writeln("Operação cancelada.");
+            voltarInicio();
+            return;
+        }
+        num1 = Number(entrada1);
+    }
+
+    document.writeln(`A contagem regressiva de ${num1} é:<br><br>`);
+
+    let contador = num1;
+    while (contador >= 0) {
+        document.writeln(contador + "<br>");
+        contador--;
+    }
+
+    voltarInicio();
+}
+
+function validaSenha() {
+
+    let entrada1 = prompt("Digite um número inicial: ");
+    if (entrada1 === null) {
+        document.writeln("Operação cancelada.");
+        voltarInicio();
+        return;
+    }
+    let num1 = Number(entrada1);
+    while (isNaN(num1) || (num1 === 0)) {
+        entrada1 = prompt("Digite um número válido maior que zero: ");
+        if (entrada1 === null) {
+            document.writeln("Operação cancelada.");
+            voltarInicio();
+            return;
+        }
+        num1 = Number(entrada1);
+    }
+    let entrada2 = prompt("Digite o número final: ");
+    if (entrada1 === null) {
+        document.writeln("Operação cancelada.");
+        voltarInicio();
+        return;
+    }
+    let num2 = Number(entrada2);
+    while (isNaN(num2) || (num2 === 0)) {
+        entrada2 = prompt("Digite um número válido maior que zero: ");
+        if (entrada2 === null) {
+            document.writeln("Operação cancelada.");
+            voltarInicio();
+            return;
+        }
+        num2 = Number(entrada2);
+    }
+    let encontrados = [];
+
+    for (let i = num1; i <= num2; i++) {
+        if (i % 2 === 0 && i % 3 === 0) {
+            encontrados.push(i);
+        }
+    }
+
+    if (encontrados.length > 0) {
+        document.writeln(`Números pares e múltiplos de 3 entre ${num1} e ${num2}:<br><br>`);
+        for (let num of encontrados) {
+            document.writeln(num + "<br>");
+        }
+    } else {
+        document.writeln(`Nenhum número entre ${num1} e ${num2} é par e múltiplo de 3 ao mesmo tempo.`);
+    }
+
+    voltarInicio();
+}
+
+
+

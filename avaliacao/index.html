@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação</title>
     <link rel="icon" href="./img/blueprint.png">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header>
         <h1 id="top-text">Avaliação prática de JS - Nível básico </h1>
-        <h2 id="subtitle">Interação via prompt() e document.write() - Na página HTML deverá ter um botão para chamar cada função.
+        <h2 id="subtitle">Interação via prompt() e document.write() - Na página HTML deverá ter um botão para chamar
+            cada função.
             Total de questões: 10 | Valor sugerido: 2.0 pontos cada – Total 20 Pts. </h2>
         <hr>
     </header>
     <main>
-        <h3 class="questions">Questão 1 – Calculadora Avançada</h3>
+        <h3 id="first-topic" class="questions">Questão 1 – Calculadora Avançada</h3>
         <p class="function"><strong>Função:</strong>calculadoraAvancada()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça dois números e a operação desejada (+, -, *, /, %, **).7
+        <p class="description"><strong>Descrição:</strong><br>Peça dois números e a operação desejada (+, -, *, /, %,
+            **).7
             Use if/else para realizar a operação. Mostre o resultado com
             document.write().</p>
 
-            <button class="interation" onclick="calculadoraAvancada()">Calculadora</button>
+        <button class="interation" onclick="calculadoraAvancada()">Calculadora</button>
 
         <hr>
         <h3 class="questions">Questão 2 – Classificação Etária</h3>
@@ -39,66 +39,77 @@
             <li>60 ou mais: Idoso</li>
         </ul>
 
-         <button class="interation" onclick="classificarIdade()">Faixa etária</button>
+        <button class="interation" onclick="classificarIdade()">Faixa etária</button>
 
 
         <h3 class="questions">Questão 3 – Tabuada com Intervalo</h3>
         <p class="function"><strong>Função:</strong> tabuadaPersonalizada()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça um número base e um número final. Mostre a tabuada do número
+        <p class="description"><strong>Descrição:</strong><br>Peça um número base e um número final. Mostre a tabuada do
+            número
             base até o limite escolhido usando for</p>
 
-            <button class="interation" onclick="tabuadaPersonalizada()">Tabuada</button>
+        <button class="interation" onclick="tabuadaPersonalizada()">Tabuada</button>
 
         <hr>
         <h3 class="questions">Questão 4 – Soma de Pares com whilE</h3>
         <p class="function"><strong>Função:</strong> somaParesWhile()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça um número limite e some todos os pares de 1 até ele usando while.
+        <p class="description"><strong>Descrição:</strong><br>Peça um número limite e some todos os pares de 1 até ele
+            usando while.
             Mostre a soma com document.write().</p>
 
-            <button class="interation" onclick="somaParesWhile()">Somador de Pares</button>
+        <button class="interation" onclick="somaParesWhile()">Somador de Pares</button>
 
         <hr>
         <h3 class="questions">Questão 5 – Validação de Senha com Tentativas</h3>
         <p class="function"><strong>Função:</strong> validaSenha()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça uma senha via prompt(). Permita até 3 tentativas. Senha correta:
+        <p class="description"><strong>Descrição:</strong><br>Peça uma senha via prompt(). Permita até 3 tentativas.
+            Senha correta:
             "senai123". Mostre "Acesso permitido" ou "Acesso bloqueado". </p>
 
-            <button class="interation" onclick="validaSenha()">Digite sua senha!</button>
+        <button class="interation" onclick="validaSenha()">Digite sua senha!</button>
 
         <hr>
         <h3 class="questions">Questão 6 – Fatorial com Validação</h3>
         <p class="function"><strong>Função:</strong> calcularFatorial()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça um número inteiro positivo e calcule o fatorial usando for. Valide
+        <p class="description"><strong>Descrição:</strong><br>Peça um número inteiro positivo e calcule o fatorial
+            usando for. Valide
             a entrada e exiba o resultado.</p>
 
-            <button class="interation" onclick="calcularFatorial()">Calcular fatorial</button>
- 
+        <button class="interation" onclick="calcularFatorial()">Calcular fatorial</button>
+
         <hr>
         <h3 class="questions">Questão 7 – Verificação de Número Primo</h3>
         <p class="function"><strong>Função:</strong>verificarPrimo()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça um número inteiro. Verifique se é primo e mostre uma mensagem com
+        <p class="description"><strong>Descrição:</strong><br>Peça um número inteiro. Verifique se é primo e mostre uma
+            mensagem com
             document.write(). </p>
 
-            <button class="interation" onclick="verificarPrimo()">Par ou Primo</button>
+        <button class="interation" onclick="verificarPrimo()">Par ou Primo</button>
 
         <hr>
         <h3 class="questions">Questão 8 – Média com Entradas Ilimitadas</h3>
         <p class="function"><strong>Função:</strong> mediaAritmetica()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça números até o usuário digitar "fim". Calcule a média dos números
+        <p class="description"><strong>Descrição:</strong><br>Peça números até o usuário digitar "fim". Calcule a média
+            dos números
             inseridos com while. </p>
 
-             <button class="interation" onclick="mediaAritmetica()">Média Aritimética</button>
+        <button class="interation" onclick="mediaAritmetica()">Média Aritimética</button>
 
         <hr>
         <h3 class="questions">Questão 9 – Contador Regressivo</h3>
         <p class="function"><strong>Função:</strong> contadorRegressivo()
         </p>
-        <p class="description"><strong>Descrição:</strong><br>Peça um número maior que zero. Mostre contagem regressiva até 0 com while.</p>
+        <p class="description"><strong>Descrição:</strong><br>Peça um número maior que zero. Mostre contagem regressiva
+            até 0 com while.</p>
+
+        <button class="interation" onclick="contadorRegressivo() ">Contagem Regressiva</button>
+
         <hr>
         <h3 class="questions">Questão 10 – Verificação de múltiplos critérios com for e operadores lógicos
         </h3>
         <p class="function"><strong>Função:</strong> validaSenha()</p>
-        <p class="description"><strong>Descrição:</strong><br>Peça ao usuário um número inicial e um número final. Use um laço for para
+        <p class="description"><strong>Descrição:</strong><br>Peça ao usuário um número inicial e um número final. Use
+            um laço for para
             percorrer esse intervalo e:
             Exibir apenas os números que sejam pares e múltiplos de 3 ao mesmo tempo.
             Exiba uma mensagem se nenhum número satisfizer a condição.
@@ -106,8 +117,11 @@
             Exemplo:
             Se o usuário informar início = 1 e fim = 15, o script deve exibir:
             6 e 12 (são pares e múltiplos de 3).</p>
-            <hr>
-            <script src="script.js"></script>
+
+ <button class="interation" onclick="validaSenha()">Verificar Múltiplos</button>
+
+        <hr>
+        <script src="script.js"></script>
     </main>
     <footer>
 
